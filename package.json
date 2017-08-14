@@ -38,6 +38,7 @@
     "bluebird": "^3.4.6",
     "electrode-archetype-react-app": "^3.0.0",
     "electrode-confippet": "^1.0.0",
+    "electrode-demo-component": "^1.0.0",
     "electrode-react-webapp": "^1.1.0",
     "electrode-redux-router-engine": "^1.2.2",
     "electrode-server": "^1.0.0",

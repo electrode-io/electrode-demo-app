@@ -23,7 +23,23 @@ import electrodePng from "../images/electrode.png";
 import DemoStates from "./demo-states";
 import DemoPureStates from "./demo-pure-states";
 import { DemoButtons } from "./demo-buttons";
+import { ElectrodeDemoComponent } from "electrode-demo-component";
 /**/
+
+const data = [
+  {
+    summary: "summary 1",
+    details: "details 1"
+  },
+  {
+    summary: "summary 2",
+    details: "details 2"
+  },
+  {
+    summary: "summary 3",
+    details: "details 3"
+  }
+];
 
 export default () =>
   <div className={custom.container}>
@@ -32,7 +48,9 @@ export default () =>
     <section className={custom.header}>
       <h2 className={skeleton.title}>
         Hello from {" "}
-        <a href="https://github.com/electrode-io">{"Electrode"} <img src={electrodePng} /></a>
+        <a href="https://github.com/electrode-io">
+          {"Electrode"} <img src={electrodePng} />
+        </a>
       </h2>
     </section>
 
@@ -46,5 +64,9 @@ export default () =>
 
     <div className={custom["docs-section"]}>
       <DemoButtons />
+    </div>
+
+    <div className={custom["docs-section"]}>
+      <ElectrodeDemoComponent data={data} />
     </div>
   </div>;
